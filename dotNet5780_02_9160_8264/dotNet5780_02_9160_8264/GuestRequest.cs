@@ -22,8 +22,20 @@ namespace dotNet5780_02_9160_8264
 
         public bool IsApproved
         {
+            set;
             get;
         }
 
+        public override string ToString()
+        {
+            return "entry date:" + EntryDate + "\nrelease date:" + ReleaseDate + "\nisapproved:" + IsApproved;
+        }
+
+        public void func1()
+        {
+            Console.WriteLine(entryDate);
+        }
+        
     }
 }
+

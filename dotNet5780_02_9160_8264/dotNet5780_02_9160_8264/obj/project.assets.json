@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\c#\\dotNet5780_02_9160_8264\\dotNet5780_02_9160_8264\\dotNet5780_02_9160_8264.csproj",
+      "projectUniqueName": "C:\\Users\\zobel\\Documents\\GitHub\\dotNet_02_5780_9160_8264\\dotNet5780_02_9160_8264\\dotNet5780_02_9160_8264\\dotNet5780_02_9160_8264.csproj",
       "projectName": "dotNet5780_02_9160_8264",
-      "projectPath": "Z:\\c#\\dotNet5780_02_9160_8264\\dotNet5780_02_9160_8264\\dotNet5780_02_9160_8264.csproj",
+      "projectPath": "C:\\Users\\zobel\\Documents\\GitHub\\dotNet_02_5780_9160_8264\\dotNet5780_02_9160_8264\\dotNet5780_02_9160_8264\\dotNet5780_02_9160_8264.csproj",
       "packagesPath": "C:\\Users\\zobel\\.nuget\\packages\\",
-      "outputPath": "Z:\\c#\\dotNet5780_02_9160_8264\\dotNet5780_02_9160_8264\\obj\\",
+      "outputPath": "C:\\Users\\zobel\\Documents\\GitHub\\dotNet_02_5780_9160_8264\\dotNet5780_02_9160_8264\\dotNet5780_02_9160_8264\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

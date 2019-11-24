@@ -165,10 +165,14 @@ namespace dotNet5780_02_9160_8264
             return true;
         }
 
+        /// <summary>
+        /// used for printing the date by ConsoleWrite
+        /// </summary>
+        /// <returns>the date in string format</returns>
         public override string ToString()
         {
             return DayPrint + "." + MonthPrint + "." + YearPrint;
         }
     }
 }
-}
+
