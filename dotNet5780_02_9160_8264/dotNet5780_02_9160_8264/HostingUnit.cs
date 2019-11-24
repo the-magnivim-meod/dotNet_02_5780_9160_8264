@@ -46,7 +46,7 @@ namespace dotNet5780_02_9160_8264
 
         public override string ToString()
         {
-            return "serial key:" + HostingUnitKey + "\n" + "booked days:\n" + diary.PrintBookedDays();
+            return "serial key:" + HostingUnitKey + "\n" + "booked days:\n" + diary.ReturnBookedDaysString();
         }
     }
 }
