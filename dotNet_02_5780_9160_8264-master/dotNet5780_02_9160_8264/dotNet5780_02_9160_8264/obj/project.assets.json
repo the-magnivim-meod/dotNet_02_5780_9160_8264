@@ -664,23 +664,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\abrzel\\.nuget\\packages\\": {},
+    "C:\\Users\\zobel\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\abrzel\\Documents\\GitHub\\dotNet_02_5780_9160_8264\\dotNet_02_5780_9160_8264-master\\dotNet5780_02_9160_8264\\dotNet5780_02_9160_8264\\dotNet5780_02_9160_8264.csproj",
+      "projectUniqueName": "C:\\Users\\zobel\\Documents\\GitHub\\dotNet_02_5780_9160_8264\\dotNet_02_5780_9160_8264-master\\dotNet5780_02_9160_8264\\dotNet5780_02_9160_8264\\dotNet5780_02_9160_8264.csproj",
       "projectName": "dotNet5780_02_9160_8264",
-      "projectPath": "C:\\Users\\abrzel\\Documents\\GitHub\\dotNet_02_5780_9160_8264\\dotNet_02_5780_9160_8264-master\\dotNet5780_02_9160_8264\\dotNet5780_02_9160_8264\\dotNet5780_02_9160_8264.csproj",
-      "packagesPath": "C:\\Users\\abrzel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\abrzel\\Documents\\GitHub\\dotNet_02_5780_9160_8264\\dotNet_02_5780_9160_8264-master\\dotNet5780_02_9160_8264\\dotNet5780_02_9160_8264\\obj\\",
+      "projectPath": "C:\\Users\\zobel\\Documents\\GitHub\\dotNet_02_5780_9160_8264\\dotNet_02_5780_9160_8264-master\\dotNet5780_02_9160_8264\\dotNet5780_02_9160_8264\\dotNet5780_02_9160_8264.csproj",
+      "packagesPath": "C:\\Users\\zobel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\zobel\\Documents\\GitHub\\dotNet_02_5780_9160_8264\\dotNet_02_5780_9160_8264-master\\dotNet5780_02_9160_8264\\dotNet5780_02_9160_8264\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\abrzel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\zobel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
