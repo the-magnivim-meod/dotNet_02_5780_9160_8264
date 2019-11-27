@@ -52,6 +52,12 @@ namespace dotNet5780_02_9160_8264
             return output;
         }
 
+        /// <summary>
+        /// checks if the request is valid and if it is 
+        /// it adds it to the schedule
+        /// </summary>
+        /// <param name="guestReq">the request to check</param>
+        /// <returns>true - if the function worked, false otherwise</returns>
         public bool ApproveRequest(GuestRequest guestReq)
         {
             int num_of_nights = ((int)guestReq.ReleaseDate.MonthIndex - (int)guestReq.EntryDate.MonthIndex) * 31 + (guestReq.ReleaseDate.DayIndex - guestReq.EntryDate.DayIndex);// calculates the length of visit in nights
@@ -78,6 +84,11 @@ namespace dotNet5780_02_9160_8264
             return guestReq.IsApproved;
         }
 
+
+        /// <summary>
+        ///calculates number of occupied days
+        /// </summary>
+        /// <returns>num of occupied nights</returns>
         public int GetAnnualBusyDays()
         {
             int sum = 0;
@@ -86,33 +97,23 @@ namespace dotNet5780_02_9160_8264
             {
                 for (int j = 0; j < 31; j++)
                 {
-                    if (year[i, j])//we just found a new sequence
+                    if (year[i, j])//we found an occupied day 
                     {
-
-                        sum++;
+                        sum++;//count it
                     }
-
-
                 }
             }
             return sum;
         }
 
+        /// <summary>
+        /// calculates the annual percentage
+        /// of busy day
+        /// </summary>
+        /// <returns></returns>
         public float GetAnnualBusyPercentage()
         {
-            int numBookedNights = 0;
-            for (int i = 0; i < 12; i++)
-            {
-                for (int j = 0; j < 31; j++)
-                {
-                    if (year[i, j])
-                    {
-                        numBookedNights++;
-                    }
-                }
-            }
-            return (numBookedNights / 372);
-
+            return ((GetAnnualBusyDays() / 372)*100);//return the percantage
         }
        
     }

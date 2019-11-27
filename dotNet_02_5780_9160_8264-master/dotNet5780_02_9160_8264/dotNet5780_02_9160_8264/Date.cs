@@ -35,6 +35,20 @@ namespace dotNet5780_02_9160_8264
         /// </summary>
         public int DayIndex
         {
+            set
+            {
+                if (value >= 0 && value <= 30)//day indexes are 0-30
+                {
+                    day = value +1;
+                }
+
+                else
+                {
+                    day = -1;
+                }
+
+            }
+
             get
             {
                 return day - 1;
@@ -50,7 +64,7 @@ namespace dotNet5780_02_9160_8264
         {
             set
             {
-                if (value > 0 && value < 32)//day is 1-31
+                if (value >= 1 && value <= 31)//day is 1-31
                 {
                     day = value;
                 }
@@ -72,6 +86,22 @@ namespace dotNet5780_02_9160_8264
         /// </summary>
         public Months MonthIndex
         {
+            set
+            {
+                if (value >= Months.January -1 && value <= Months.December -1)//if month is 0-11
+                {
+                    month = value + 1;
+                }
+                /*else if(value == (Months)12)//if month is 12
+                {
+                    month = Months.December;
+                }*/
+                else
+                {
+                    month = Months.Zero;
+                }
+            }
+
             get
             {
                 return month - 1;
@@ -112,7 +142,7 @@ namespace dotNet5780_02_9160_8264
         {
             set
             {
-                if (value >= 2000 && value <= 2020)//day is 2000-2020
+                if (value >= 0)//day is 2000-2020
                 {
                     year = value;
                 }
@@ -172,6 +202,22 @@ namespace dotNet5780_02_9160_8264
         public override string ToString()
         {
             return DayPrint + "." + MonthPrint + "." + YearPrint;
+        }
+
+        public static Date operator +(Date start, int length)
+        {
+            Date end = new Date();
+
+            if (end.DayIndex + length > 30)//if the day addition gets us to the next month
+            {
+                end.MonthIndex = (Months)(((int)end.MonthIndex + 1) % 12);
+                if (end.MonthPrint == Months.January)//if we started a new year
+                {
+                    end.YearPrint++;
+                }
+            }
+            end.DayIndex = (end.DayIndex + length) % 31;//add the days to the starting date
+            return end;
         }
     }
 }

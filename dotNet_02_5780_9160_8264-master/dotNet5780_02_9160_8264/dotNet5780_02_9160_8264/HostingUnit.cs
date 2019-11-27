@@ -4,7 +4,7 @@ using System.Text;
 
 namespace dotNet5780_02_9160_8264
 {
-    class HostingUnit
+    class HostingUnit : IComparable
     {
         private static int stSerialKey;
         private Schedule diary;
@@ -39,9 +39,17 @@ namespace dotNet5780_02_9160_8264
             }
         }
 
-        public bool[,] Diary
+        public Schedule Diary
         {
-            get;
+            get
+            {
+                return diary;
+            }
+        }
+
+        public int CompareTo(object obj)
+        {
+            return Diary.GetAnnualBusyDays().CompareTo(obj);
         }
 
         public override string ToString()

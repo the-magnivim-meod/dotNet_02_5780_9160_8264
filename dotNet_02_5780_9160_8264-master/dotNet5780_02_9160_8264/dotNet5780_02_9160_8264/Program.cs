@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace dotNet5780_02_9160_8264
 {
@@ -16,13 +17,13 @@ namespace dotNet5780_02_9160_8264
         {
             List<Host> lsHosts;
             lsHosts = new List<Host>()
- {
- new Host(1, rand.Next(1,5)),
- new Host(2, rand.Next(1,5)),
- new Host(3, rand.Next(1,5)),
- new Host(4, rand.Next(1,5)),
- new Host(5, rand.Next(1,5))
- };
+            {
+            new Host(1, rand.Next(1,5)),
+            new Host(2, rand.Next(1,5)),
+            new Host(3, rand.Next(1,5)),
+            new Host(4, rand.Next(1,5)),
+            new Host(5, rand.Next(1,5))
+            };
             for (int i = 0; i < 100; i++)
             {
                 foreach (var host in lsHosts)
@@ -73,14 +74,25 @@ namespace dotNet5780_02_9160_8264
                         //sort this host by occupancy of its units
                         host.SortUnits();
                         //print this host detailes
-                        Console.WriteLine("**** Details of the Host with the
-                        most occupied unit:\n");
-                        
-                         Console.WriteLine(host);
+                        Console.WriteLine("**** Details of the Host with the most occupied unit:\n");
+
+
+                        Console.WriteLine(host);
                         break;
                     }
                 }
             }
         }
-    }
+
+        private static GuestRequest CreateRandomRequest()
+        {
+            Random rand = new Random(DateTime.Now.Millisecond);
+            int day = rand.Next(1, 31);
+            Months month = (Months)rand.Next(1, 12);
+            Date date = new Date(day, month, 2020);
+            int numOfDays = rand.Next(2, 10);
+            GuestRequest request = new GuestRequest();
+        }
+    }
+
 }

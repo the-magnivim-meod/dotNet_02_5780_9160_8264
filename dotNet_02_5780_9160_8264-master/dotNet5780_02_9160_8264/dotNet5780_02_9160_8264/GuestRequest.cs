@@ -6,20 +6,32 @@ namespace dotNet5780_02_9160_8264
 {
     class GuestRequest
     {
-        Date entryDate;
-        Date releaseDate;
-        bool isApproved;
 
+        public GuestRequest(Date entry, Date release)
+        {
+            EntryDate = entry;
+            ReleaseDate = release;
+        }
+
+        /// <summary>
+        /// begining of Hosting
+        /// </summary>
         public Date EntryDate
         {
             get;
         }
 
+        /// <summary>
+        /// end of Hosting
+        /// </summary>
         public Date ReleaseDate
         {
             get;
         }
 
+        /// <summary>
+        /// is the request approved
+        /// </summary>
         public bool IsApproved
         {
             set;
@@ -30,12 +42,6 @@ namespace dotNet5780_02_9160_8264
         {
             return "entry date:" + EntryDate + "\nrelease date:" + ReleaseDate + "\nisapproved:" + IsApproved;
         }
-
-        public void func1()
-        {
-            Console.WriteLine(entryDate);
-        }
-        
     }
 }
 

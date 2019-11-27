@@ -1,0 +1,4 @@
+C:\Users\zobel\Documents\GitHub\dotNet_02_5780_9160_8264\dotNet_02_5780_9160_8264-master\dotNet5780_02_9160_8264\dotNet5780_02_9160_8264\obj\Debug\netcoreapp2.0\dotNet5780_02_9160_8264.csprojAssemblyReference.cache
+C:\Users\zobel\Documents\GitHub\dotNet_02_5780_9160_8264\dotNet_02_5780_9160_8264-master\dotNet5780_02_9160_8264\dotNet5780_02_9160_8264\obj\Debug\netcoreapp2.0\dotNet5780_02_9160_8264.csproj.CoreCompileInputs.cache
+C:\Users\zobel\Documents\GitHub\dotNet_02_5780_9160_8264\dotNet_02_5780_9160_8264-master\dotNet5780_02_9160_8264\dotNet5780_02_9160_8264\obj\Debug\netcoreapp2.0\dotNet5780_02_9160_8264.AssemblyInfoInputs.cache
+C:\Users\zobel\Documents\GitHub\dotNet_02_5780_9160_8264\dotNet_02_5780_9160_8264-master\dotNet5780_02_9160_8264\dotNet5780_02_9160_8264\obj\Debug\netcoreapp2.0\dotNet5780_02_9160_8264.AssemblyInfo.cs
